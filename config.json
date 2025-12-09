@@ -1,0 +1,9 @@
+{
+  "imdb_top_250_url": "https://www.imdb.com/chart/top/",
+  "imdb_top_250_series_url": "https://www.imdb.com/chart/toptv/",
+  "n_filmes": 250,
+  "html_source_path": "data/imdb_top_250_movies.html",
+  "series_html_source_path": "data/imdb_top_250_tv.html",
+  "database_path": "data/imdb.db",
+  "output_directory": "data"
+}
