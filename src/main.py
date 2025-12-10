@@ -232,7 +232,7 @@ def build_catalog(movies: List[Movie], series_list: List[Series]) -> List[TV]:
     return catalog
 
 
-def show_dataframe_preview(dataframe, name: str, exercise_label: str) -> None:
+def show_dataframe_preview(dataframe, name: str) -> None:
     if dataframe is None:
         console.print("DataFrame de " + name + " não foi carregado.", style="bold yellow")
         console.print()
@@ -243,7 +243,7 @@ def show_dataframe_preview(dataframe, name: str, exercise_label: str) -> None:
         console.print()
         return
 
-    title_text = "[bold cyan]Primeiras 5 linhas de " + name + " (" + exercise_label + ")[/bold cyan]"
+    title_text = "[bold cyan]Primeiras 5 linhas de " + name + " (Exercício 7)[/bold cyan]"
     console.rule(title_text)
 
     table = Table(show_header=True, header_style="bold magenta")
@@ -354,8 +354,8 @@ def main() -> None:
 
     movies_df, series_df = load_dataframes(engine)
 
-    show_dataframe_preview(movies_df, name="movies", exercise_label="Exercício 7")
-    show_dataframe_preview(series_df, name="series", exercise_label="Exercício 7")
+    show_dataframe_preview(movies_df, name="movies")
+    show_dataframe_preview(series_df, name="series")
 
     show_top_movies(movies_df)
 
